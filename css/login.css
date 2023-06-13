@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Single+Day&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #969799;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #00081D;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid gray;
+    background-color: #00081D;
+}
+
+#logo {
+    height: 90px;
+    line-height: 90px;
+    color: #E50914;
+    float: left;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+main {
+    height: 800px;
+    background-color: #00081D;
+}
+
+.login_div {
+    position: relative;
+    width: 400px;
+    height: 620px;
+    margin: 0 auto;
+    transform: translate(0%, 10%);
+    background-color: white;
+}
+
+.login_div p {
+    padding: 8% 13%;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* 로그인(email&pw) */
+.login_data {
+    width: 100%;
+    text-align: center;
+}
+
+.login_data input {
+    width: 300px;
+    height: 50px;
+    margin: 5px 0;
+    font-size: 1rem;
+    color: orangered;
+    border: none;
+    border-radius: 5px;
+    background-color: #383838;
+}
+
+/* 로그인 버튼 */
+.login_btn {
+    width: 100%;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.login_btn button {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #E50914;
+}
+
+#chk_login {
+    margin-left: 15%;
+}
+
+#chk_login span {
+    margin: 0 10px;
+}
+
+.login_div .login_txt {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login_txt a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login_txt span {
+    font-size: 0.7rem;
+}
+
+#hide_txt {
+    opacity: 0;
+
+    padding: 0;
+    text-align: center;
+    line-height: 5px;
+    transition: all .3s ease-in;
+}
+
+#hide_txt span {
+    font-size: 0.7rem;
+}
+
+#hide_txt a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#detail {
+    transition: all .3s ease-out;
+}
+
+/** 하단 **/
+footer {
+    height: 435px;
+    color: gray;
+    line-height: 70px;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+/* 반응형 레이아웃 */
+.layout {
+    max-width: 1280px;
+}
+
+footer h4 {
+    font-weight: 200;
+    padding-left: 10%;
+}
+
+.layout a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    width: 25%;
+    float: left;
+    padding-left: 10%;
+    line-height: 30px;
+}
+
+footer li a {
+    font-size: 1rem;
+}
+
+.f_txt {
+    height: auto;
+    padding-left: 10%;
+    line-height: 35px;
+}
+
+.f_txt span {
+    font-size: 0.8rem;
+}

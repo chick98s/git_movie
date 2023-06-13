@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Single+Day&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #969799;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #00081D;
+}
+
+/* ul li */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    background-color: #00081D;
+}
+
+#logo {
+    height: 80px;
+    line-height: 80px;
+    color: #E50914;
+    float: left;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+main {
+    width: auto;
+    height: auto;
+    overflow:hidden;
+    background-color: #00081D;
+}
+
+.head_banner {
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    padding: 5% 5%;
+    background-color: #252525;
+}
+
+.head_banner p {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.head_banner span {
+    color: grey;
+    font-size: 1rem;
+}
+
+.head_banner .heart {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.movie_page {
+    height: auto;
+    margin: 45px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.movie_page div {
+    width: 220px;
+    height: 350px;
+    margin: 15px 5px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #00081D;
+    overflow: hidden;
+}
+
+.movie_page img {
+    width: 100%;
+    height: 350px;
+    transition: all .3s ease;
+}
+
+.movie_page img:hover {
+    transform: scale(1.1);
+}
+
+/** 하단 **/
+footer {
+    height: auto;
+    color: gray;
+    line-height: 70px;
+    background-color: #00081D;
+}
+
+/* 반응형 레이아웃 */
+.layout {
+    max-width: 1280px;
+}
+
+footer h4 {
+    font-weight: 200;
+    padding-left: 10%;
+}
+
+.layout a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    width: 25%;
+    float: left;
+    padding-left: 10%;
+    line-height: 30px;
+}
+
+footer li a {
+    font-size: 1rem;
+}
+
+.f_txt {
+    height: auto;
+    padding-left: 10%;
+    line-height: 35px;
+}
+
+.f_txt span {
+    font-size: 0.8rem;
+}

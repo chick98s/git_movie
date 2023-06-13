@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./css/login.css">
+
+    <!--타이틀 이미지-->
+    <link href="./image/logo.png" rel="shortcut icon" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <h1><a href="./movie.html">NETFLIX</a></h1>
+            </div>
+        </header>
+
+        <main class="clearfix">
+            <!--로그인 화면-->
+            <div class="login_div">
+                <p>로그인</p>
+
+                <div class="login_data">
+                    <input type="text" id="id" placeholder="이메일 주소 또는 전화번호" style="padding-left: 20px;">
+                    <input type="password" id="pwd" placeholder="비밀번호" style="padding-left: 20px;">
+                </div>
+
+                <div class="login_btn">
+                    <button id="login" onclick="javascript:OnLogin()">로그인</button>
+                </div>
+
+                <input type="checkbox" id="chk_login"><span>로그인 정보 저장</span>
+
+                <p class="login_txt">
+                    Netflix 회원이 아닌가요?
+                    <strong style="color: #E50914;"><a href="./movie.html#email">지금 가입하세요</a></strong><br><br>
+
+                    <span>이 페이지는 Google reCAPTCHA의 보호를 받아</span><br>
+                    <span>사용자가 로봇이 아님을 확인합니다.</span>
+                    <span style="color: blue" id="detail"><a onclick="OnDetail()">자세히 알아보기.</a></span>
+                </p>
+
+                <p id="hide_txt">
+                    <span>Google reCAPTCHA가 수집하는 정보에는 Google</span><br>
+                    <span style="color: blue"><a href="https://policies.google.com/privacy" target="_blank">개인정보처리방침</a></span><span>과</span>
+                    <span style="color: blue"><a href="https://policies.google.com/terms" target="_blank">서비스 약관</a></span><span>이 적용되며, 해당</span><br>
+                    <span>정보는 reCAPTCHA가 서비스 제공, 관리 및 개선과</span><br>
+                    <span>일반적인 보안 유지에 사용됩니다.(Google의 개인 맞춤</span><br>
+                    <span>광고에 사용 안함).</span>
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="layout">
+                <h4>질문이 있으신가요? 문의전화: <a href="#">080-001-0001</a></h4>
+
+                <ul>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">쿠키 설정</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">고객 센터</a></li>
+                    <li><a href="#">회사 정보</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">이용 약관</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+                <p class="f_txt">
+                    <br>넷플릭스 대한민국<br><br>
+                    <span>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2022-서울종로-0426호 전화번호:080-001-0001</span><br>
+                    <span>대표: 레지널드 숀 톰프슨</span><br>
+                    <span>이메일 주소: korea@netflix.com</span><br>
+                    <span>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</span><br>
+                    <span><a href="#">공정거래위원회 웹사이트</a></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var opacity = 0;
+        var intervalID = 0;
+        
+        function OnDetail() {
+            const detail = document.getElementById('detail');
+
+            if(detail.style.display !== 'none') {
+                detail.style.display = 'none';
+            }
+
+            var hide = document.getElementById("hide_txt");
+            opacity = Number(window.getComputedStyle(hide).getPropertyValue("opacity"));
+
+            if (opacity < 1) {
+                //FadeIn
+                opacity = opacity + 1;
+                hide.style.opacity = opacity;
+            }
+        }
+
+        $(document).ready(function(e){
+            $("#detail").click(function(){
+                $("#detail").fadeOut();
+            });
+        });
+    </script>
+</body>
+
+</html>

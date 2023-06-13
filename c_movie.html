@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>넷플릭스 대한민국</title>
+    <link rel="stylesheet" href="./css/more_movie.css">
+
+    <!--타이틀 이미지-->
+    <link href="./image/logo.png" rel="shortcut icon" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!--alert창-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <h1><a href="./movie.html">NETFLIX</a></h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="head_banner">
+                <p>
+                    믿고 보는 넷플릭스 에디터 추천작<br>
+                    <span>주요 Line-up이나 화제작들을</span>
+                    <a onclick="chk_login()"><span class="heart">❤</span></a><br>
+                    <span>넷플릭스에서 만나보세요</span>
+                </p>
+            </div>
+
+            <div class="movie_page">
+                <!--1-->
+                <div><img src="./image/cmovie_more1.png" alt="테이크 원 포스터"></div>
+                <div><img src="./image/cmovie_more2.png" alt="골때리는 그녀들 포스터"></div>
+                <div><img src="./image/cmovie_more3.png" alt="전지적 참견시점 포스터"></div>
+                <div><img src="./image/cmovie_more4.png" alt="미운우리새끼 포스터"></div>
+                <div><img src="./image/cmovie_more5.png" alt="코미디빅리그 포스터"></div>
+
+                <!--2-->
+                <div><img src="./image/cmovie_more6.png" alt="신발벗고 돌싱포맨 포스터"></div>
+                <div><img src="./image/cmovie_more7.png" alt="꼬리에 꼬리를 무는 그날이야기 포스터"></div>
+                <div><img src="./image/cmovie_more8.png" alt="동상이몽2 너는 내운명 포스터"></div>
+                <div><img src="./image/cmovie_more9.png" alt="비긴어게인3 포스터"></div>
+                <div><img src="./image/cmovie_more10.png" alt="유퀴즈 온더 블럭 포스터"></div>
+
+                <!--3-->
+                <div><img src="./image/cmovie_more11.png" alt="뿅뿅 지구오락실2 포스터"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="layout">
+                <h4>질문이 있으신가요? 문의전화: <a href="#">080-001-0001</a></h4>
+
+                <ul>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">쿠키 설정</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">고객 센터</a></li>
+                    <li><a href="#">회사 정보</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">이용 약관</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+                <p class="f_txt">
+                    <br>넷플릭스 대한민국<br><br>
+                    <span>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2022-서울종로-0426호 전화번호:080-001-0001</span><br>
+                    <span>대표: 레지널드 숀 톰프슨</span><br>
+                    <span>이메일 주소: korea@netflix.com</span><br>
+                    <span>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</span><br>
+                    <span><a href="#">공정거래위원회 웹사이트</a></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function chk_login() {
+            swal("WARNING", "로그인후 이용해주세요.", "warning").then(function(){
+                location.href='./login.html';
+            });
+        }
+    </script>
+</body>
+
+</html>
