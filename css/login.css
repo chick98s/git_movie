@@ -199,3 +199,9 @@ footer li a {
 .f_txt span {
     font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+    footer li a {font-size: 0.45rem;}
+
+    .f_txt span {font-size: 0.5rem;}    
+}

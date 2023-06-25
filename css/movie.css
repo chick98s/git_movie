@@ -320,12 +320,39 @@ footer li a {
         width: 55%;
     }
 
+    .start_btn {
+        width: 85px;
+        font-size: 1em;
+    }
+
+    .movie_page div {
+        width: 25%;
+        height: auto;
+        margin: 15px 5px;
+    }
+
+    .movie_page img {
+        height: 150px;
+    }
+    
+    .movie span a {
+        margin: 0px 10px;
+    }
+
     p.ask {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
 
     .qna1 p, .qna2 p, .qna3 p,
     .qna4 p, .qna5 p {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
+    }
+
+    footer li a {
+        font-size: 7px;
+    }
+
+    .f_txt span {
+        font-size: 8px;
     }
 }
