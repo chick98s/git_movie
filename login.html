@@ -13,6 +13,9 @@
     <link href="./image/logo.png" rel="shortcut icon" type="image/x-icon">
 
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+    <!--alert창-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -50,8 +53,10 @@
 
                 <p id="hide_txt">
                     <span>Google reCAPTCHA가 수집하는 정보에는 Google</span><br>
-                    <span style="color: blue"><a href="https://policies.google.com/privacy" target="_blank">개인정보처리방침</a></span><span>과</span>
-                    <span style="color: blue"><a href="https://policies.google.com/terms" target="_blank">서비스 약관</a></span><span>이 적용되며, 해당</span><br>
+                    <span style="color: blue"><a href="https://policies.google.com/privacy"
+                            target="_blank">개인정보처리방침</a></span><span>과</span>
+                    <span style="color: blue"><a href="https://policies.google.com/terms" target="_blank">서비스
+                            약관</a></span><span>이 적용되며, 해당</span><br>
                     <span>정보는 reCAPTCHA가 서비스 제공, 관리 및 개선과</span><br>
                     <span>일반적인 보안 유지에 사용됩니다.(Google의 개인 맞춤</span><br>
                     <span>광고에 사용 안함).</span>
@@ -98,11 +103,11 @@
     <script>
         var opacity = 0;
         var intervalID = 0;
-        
+
         function OnDetail() {
             const detail = document.getElementById('detail');
 
-            if(detail.style.display !== 'none') {
+            if (detail.style.display !== 'none') {
                 detail.style.display = 'none';
             }
 
@@ -116,8 +121,26 @@
             }
         }
 
-        $(document).ready(function(e){
-            $("#detail").click(function(){
+        //ID 체크
+        function OnLogin() {
+            var objId = document.getElementById("id");
+            var objPwd = document.getElementById("pwd");
+
+            if (objId.value == '') {
+                swal("WARNING", "아이디를 입력해주세요.", "warning");
+                objId.focus();
+                return;
+            }
+
+            if (objPwd.value == '') {
+                swal("WARNING", "비밀번호를 입력해주세요.", "warning");
+                objPwd.focus();
+                return;
+            }
+        }
+
+        $(document).ready(function (e) {
+            $("#detail").click(function () {
                 $("#detail").fadeOut();
             });
         });
